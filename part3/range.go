@@ -11,4 +11,18 @@ func main() {
 	for i, v := range pow {
 		fmt.Printf("2**%d = %d\n", i, v)
 	}
+
+	pow := make([]int, 10)
+	// You can skip the index or value by assigning to _.
+	for i, _ := range pow {
+		fmt.Printf("index %d\n", i)
+	}
+
+	// If you only want the index, you can omit the second variable.
+	for i := range pow {
+		pow[i] = 1 << uint(i) // == 2**i
+	}
+	for _, value := range pow {
+		fmt.Printf("value %d\n", value)
+	}
 }

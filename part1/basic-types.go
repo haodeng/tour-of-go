@@ -35,6 +35,9 @@ func main() {
 	fmt.Printf("Type: %T Value: %v\n", MaxInt, MaxInt)
 	fmt.Printf("Type: %T Value: %v\n", z, z)
 
+	var ui8 uint8 = 1
+	fmt.Printf("Type: %T Value: %v\n", ui8, ui8)
+
 	// Zero values
 	var i int     // 0
 	var f float64 // 0
