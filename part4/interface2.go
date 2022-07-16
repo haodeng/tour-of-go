@@ -10,6 +10,7 @@ type T struct {
 	S string
 }
 
+// Unlike other languages like Java, you don’t need to explicitly specify that a type implements an interface using something like an implements keyword.
 // This method means type T implements the interface I,
 // but we don't need to explicitly declare that it does so.
 func (t T) M() {
