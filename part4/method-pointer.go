@@ -50,4 +50,9 @@ func main() {
 	v2 := Vertex{3, 4}
 	Scale(&v2, 10)
 	fmt.Println(Abs(v2))
+
+	// Functions that take a value argument must take a value of that specific type
+	fmt.Println(Abs(*p))
+	// fmt.Println(Abs(p)) Compile error
+
 }
