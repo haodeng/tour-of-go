@@ -34,8 +34,11 @@ func main() {
 	fmt.Println(t.next.val)
 
 	lst := List[int]{val: 1}
+	fmt.Println("list:", lst.GetAll())
 	lst.add(10)
+	fmt.Println("list:", lst.GetAll())
 	lst.add(13)
+	fmt.Println("list:", lst.GetAll())
 	lst.add(23)
 	fmt.Println("list:", lst.GetAll())
 }
