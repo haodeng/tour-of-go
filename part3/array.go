@@ -14,4 +14,18 @@ func main() {
 
 	primes := [6]int{2, 3, 5, 7, 11, 13}
 	fmt.Println(primes)
+
+	// array
+	a2 := [...]string{"no error", "Eio", "invalid argument", "test"}
+	fmt.Println(a2)
+	fmt.Printf("type: %T\n", a2) // [4]string
+
+	// slice, not array
+	s := []string{"no error", "Eio", "invalid argument"}
+	fmt.Println(s)
+	fmt.Printf("type: %T\n", s) // []string
+
+	//map
+	m := map[int]string{1: "no error", 2: "Eio", 3: "invalid argument"}
+	fmt.Printf("type: %T\n", m) // map[int]string
 }
