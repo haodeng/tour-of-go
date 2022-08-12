@@ -57,6 +57,13 @@ func mutatingMaps() {
 
 	v, ok := m["Answer"]
 	fmt.Println("The value:", v, "Present?", ok)
+
+	v = m["Answer"]
+	fmt.Println("The value:", v)
+
+	// use the blank identifier (_) in place of the usual variable for the value.
+	_, ok = m["Answer"]
+	fmt.Println("Present?", ok)
 }
 
 func main() {
