@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"os"
+)
 
 // The var statement declares a list of variables; as in function argument lists, the type is last.
 // package level var
@@ -8,6 +11,13 @@ var c, python, java bool
 
 // Variables with initializers
 var i, j int = 1, 2
+
+// in group
+var (
+	home   = os.Getenv("HOME")
+	user   = os.Getenv("USER")
+	gopath = os.Getenv("GOPATH")
+)
 
 func main() {
 	var i2 int
@@ -20,4 +30,8 @@ func main() {
 	// Inside a function, the := short assignment statement can be used in place of a var declaration with implicit type.
 	k := 3
 	fmt.Println(k)
+
+	fmt.Println(home)
+	fmt.Println(user)
+	fmt.Println(gopath)
 }
